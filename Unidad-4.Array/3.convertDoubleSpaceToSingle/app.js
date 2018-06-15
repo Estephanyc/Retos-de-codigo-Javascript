@@ -1,6 +1,6 @@
 function convertDoubleSpaceToSingle(str) {
-    let separador = "  ";
-    let stringArray = str.split(separador);
+  
+    let stringArray = str.split("  ");
     var newString = stringArray.join(" ");
    return newString
 }
