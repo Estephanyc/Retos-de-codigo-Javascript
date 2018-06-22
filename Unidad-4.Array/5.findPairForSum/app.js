@@ -1,18 +1,20 @@
 function findPairForSum(array, number) {
     let newArray= [];
-    for(let i=0 ; i < array.length; i++)
+    
+  for(let i=0 ; i < array.length; i++)
     {
-        for(let j=1; j < array.length; j++)
-        {
-            if (array[i] + array[j] == number )
-            {
-             newArray[i]= array[i]
-             newArray[i+1]=array[j]
-             break
-            }
-        }
+      for(let j=0; j < array.length; j++)
+      {
+        if (array[i] + array[j] == number )
+          {
+            newArray[0]= array[j]
+            newArray[1]= array[i]
+            
+          }
+      }
         
-    }
+    
+  }
     return newArray
 
 }
